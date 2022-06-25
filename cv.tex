@@ -12,6 +12,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
 \input{glyphtounicode}
 
 \usepackage[default]{sourcesanspro}
@@ -39,6 +40,9 @@
 \titleformat{\section}{
   \vspace{-4pt}\centering
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\tanColor}[1]{\colorbox{Tan}{\texttt{#1}}}
+\newcommand{\apricotColor}[1]{\colorbox{Apricot}{\texttt{#1}}}
 
 
 \pdfgentounicode=1
@@ -83,16 +87,16 @@
 \begin{document}
 
 \begin{center}
-    {\LARGE Fedor Vihnin} \\ \vspace{2pt}
+  \colorbox{Peach}{\texttt{{\LARGE Fedor Vihnin}}} \\ \vspace{2pt}
     \begin{multicols}{2}
     \begin{flushleft}
-    \href{https://github.com/Brat-vseznamus}{github}\\
-    \href{https://vk.com/looongboooi}{vk}\\
+    \href{https://github.com/Brat-vseznamus}{github: Brat-vseznamus}\\
+    \href{https://vk.com/looongboooi}{vk: Fedor Vihnin}\\
     telegram: @Quicksmart
     \end{flushleft}
     
     \begin{flushright}
-    \href{https://gitlab.com/Brat-vseznamus}{gitlab}\\
+    \href{https://gitlab.com/Brat-vseznamus}{gitlab: Brat-vseznamus}\\
     phone number: +7(921)869-79-25\\
     my mail: fvixnin@gmail.com
     \end{flushright}
@@ -102,7 +106,7 @@
 
 %-----------EDUCATION-----------
 \vspace{-2pt}
-\section{Education}
+\section{\apricotColor{Education}}
     \resumeSubHeadingListStart
         \resumeSubheading
         {Saint Petersburg Presidential Lyceum PML 239
@@ -119,11 +123,11 @@
 
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{\apricotColor{Experience}}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {Software Engineer-Intern at Yandex.Direct}{September 2021 -- Present}
-            {6 month internship at Yandex Direct developing parts of java core project}{Saint-Petersburg, Russia}
+            {Software Engineer-Intern at Yandex.Direct}{September 2021 -- June 2022}
+            {8 month internship at Yandex Direct developing parts of java core project}{Saint-Petersburg, Russia}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
         \resumeSubheading
@@ -142,7 +146,7 @@
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Telegram bot for course "java-advanced"}{March 2021 -- Present}
+      {Telegram bot for course "java-advanced"}{March 2021 -- June 2021}
       {Not a commercial project for helping another students to track their poistion in queue in real time}{Saint-Petersburg, Russia}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
@@ -152,7 +156,8 @@
   \resumeSubHeadingListEnd
 
   %-----------EXPERIENCE-----------
-\section{Achievements}
+  
+\section{\apricotColor{Achievements}}
 \resumeSubHeadingListStart
   \resumeSubheading
     {Winner of ITMO University Math Olympic}{2019}
@@ -175,15 +180,15 @@
 \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Skills}
+\section{\apricotColor{Skills}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Java, JavaScript, Kotlin, Clojure, C/C++, Python, Haskell, Perl} \\
+     \textbf{Programming Languages}{: Java, JavaScript, Kotlin, Clojure, C/C++, Python, Haskell, Perl, Prolog} \\
      \textbf{Other languages}{: Bash, YQL, SQL, Arend}\\
      \textbf{Version Control}{: Git, Svn, Arc} \\
      \textbf{Writing}{: \LaTeX, Office} \\
      \textbf{Framework}{: Spring, JDBC, GraphQL} \\
-     \textbf{Languages}{: Russian, English} \\
+     \textbf{Languages}{: Russian, English (C1)} \\
      \textbf{Algorithms and Data Structures}{: The most spread algorithms and structures, heaps, search trees, algorithms and structures on graphs, flows, hash data structures, string algorithms and others\dots} \\
     }}
  \end{itemize}
