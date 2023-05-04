@@ -1,203 +1,413 @@
-\documentclass[letterpaper,10pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 3.0 (September 3, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%!TEX program = xelatex
+% NOTE: this template must be compiled with XeLaTeX rather than PDFLaTeX
+% due to the custom fonts used. The line above should ensure this happens
+% automatically, but if it doesn't, your LaTeX editor should have a simple toggle
+% to switch to using XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage{multicol}
-\usepackage[dvipsnames]{xcolor}
-\input{glyphtounicode}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\usepackage[default]{sourcesanspro}
-\usepackage[T1]{fontenc}
+\documentclass[
+	10pt, % Default font size, can be between 8pt and 12pt
+]{FreemanCV}
 
-\pagestyle{fancy}
-\fancyhf{} 
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
 
+% Headers and footers can be added with the following commands: \lhead{}, \rhead{}, \lfoot{} and \rfoot{}
+% Example right footer:
+%\rfoot{\textcolor{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-\titleformat{\section}{
-  \vspace{-4pt}\centering
-}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
-
-\newcommand{\tanColor}[1]{\colorbox{Tan}{\texttt{#1}}}
-\newcommand{\apricotColor}[1]{\colorbox{Apricot}{\texttt{#1}}}
-
-
-\pdfgentounicode=1
-
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\ 
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\begin{center}
-  \colorbox{Peach}{\texttt{{\LARGE Fedor Vihnin}}} \\ \vspace{2pt}
-    \begin{multicols}{2}
-    \begin{flushleft}
-    \href{https://github.com/Brat-vseznamus}{github: Brat-vseznamus}\\
-    \href{https://vk.com/looongboooi}{vk: Fedor Vihnin}\\
-    telegram: @Quicksmart
-    \end{flushleft}
-    
-    \begin{flushright}
-    \href{https://gitlab.com/Brat-vseznamus}{gitlab: Brat-vseznamus}\\
-    phone number: +7(921)869-79-25\\
-    mail: fvixnin@gmail.com
-    \end{flushright}
-    \end{multicols}
-\end{center}
+\begin{paracol}{2} % Begin two-column mode
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CURRICULUM VITAE TITLE
+%----------------------------------------------------------------------------------------
+
+\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+	\centering % Horizontally center text
+	
+	{\sffamily\Huge\textbf{Vikhnin Fedor}} % Your name
+	
+	% \medskip % Vertical whitespace
+	
+	% {\cursivefont\Huge\textcolor{headings}{Curriculum Vitae}}
+	
+	% \vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+% \section{Doctoral Research}
+
+% {\raggedright\textbf{``Observation of Einstein-Podolsky-Rosen Entanglement on Supraquantum Structures by Induction Through Nonlinear Transuranic Crystal of Extremely Long Wavelength Pulse from Mode-Locked Source Array"}\par}
+
+% \medskip % Vertical whitespace
+
+% My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
+
+% \medskip % Extra vertical whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Each qualification entry is added with a \qualificationentry command. Below is an empty one to use as a template:
+
+%\qualificationentry
+%	{} % Duration
+%	{} % Degree
+%	{} % Honors, achievements or distinctions (e.g. first class honors)
+%	{} % Department
+%	{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
 
 
-%-----------EDUCATION-----------
-\vspace{-2pt}
-\section{\apricotColor{Education}}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-        {Saint Petersburg Presidential Lyceum PML 239
-        }{2015 -- 2019}
-        {pupil}{Saint-Petersburg, Russia}
+\jobentry
+	{Current, from Sep 2019} % Duration
+	{} % FT/PT (full time or part time)
+	{ITMO University} % Employer
+	{Bachelor of Computer Science} % Job title
+	{I have 4.37 / 5 GPA. Also I am winner of award for educational excellence from Huawei in 2021 year, from Serokell in 2021 year and from Selectel in 2022 year.  At the moment I am preparing an article on Drift Analysis written in cooperation with my Probability Theories professor for publication.} % Description
 
-    \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {ITMO University - Applied Mathematics and Computer Science}{2019 -- Present}
-      {bachelor}{Saint-Petersburg, Russia}
+%------------------------------------------------
 
-  \resumeSubHeadingListEnd
+\jobentry
+	{Sep 2015 -- July 2019} % Duration
+	{} % FT/PT (full time or part time)
+	{Physics and mathematics lyceum №239} % Employer
+	{Student} % Job title
+	{In 2016, 2017, 2018 and 2019 I was awarded ``golden tie" for educational excellence. From 2017 until 2019 I had been a member of Theoretical Physics Laboratory and three times prize winner of All-Russia Physics Contest.} % Description
 
 
-%-----------EXPERIENCE-----------
-\section{\apricotColor{Experience}}
-\resumeSubHeadingListStart
-        \resumeSubheading
-            {UI Framework Engineer at Huawei}
-            {September 2022 -- present}
-            {Developing declarative API for cross-platform applications}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Software Engineer-Intern at Yandex.Direct}{September 2021 -- June 2022}
-            {8 month internship at Yandex Direct developing parts of java core project}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-        \resumeSubheading
-            {Scientific project in Evolution Programming at ITMO University}{August 2021 -- Present}
-            {Additive Drift with Tail Bounds: Comparing the Existing Approaches}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Summer practise in mobile development in JetBrains}{June 2018 -- July 2018}
-      {Game written in the Kotlin language in Android Sttudion}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Project for course "Kotlin: Client + Server"}{January 2021 -- Present}
-      {Clinet + server for implementation for game "bunker". Project is being finalized}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Telegram bot for course "java-advanced"}{March 2021 -- June 2021}
-      {Not a commercial project for helping another students to track their poistion in queue in real time}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Teacher in school of additional education "Shift"}{August 2019 -- August 2020}
-      {Math, Programming and Physics teacher in school}{Saint-Petersburg, Russia}
-  \resumeSubHeadingListEnd
+%------------------------------------------------
 
-  %-----------EXPERIENCE-----------
-  
-\section{\apricotColor{Achievements}}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Winner of ITMO University Math Olympic}{2019}
-    {}{}
-    \resumeSubheading
-    {Prize-winner of Regional Stage of the All-Russian School Olympiad of Physics}{2019, 2018, 2017}
-    {}{}
-    \resumeSubheading
-    {Prize-winner of Regional Stage of the All-Russian School Olympiad of Mathematics}{2018}
-    {}{}
-    \resumeSubheading
-    {Winner of the award for merit in education from Huawei}{2021}
-    {}{}
-    \resumeSubheading
-    {Winner of the award for merit in education from  \href{serokell.io}{Serokell}}{2021}
-    {}{}
-    \resumeSubheading
-    {Winner of the award for merit in education from Selectel}{2022}
-    {}{}
-\resumeSubHeadingListEnd
+\medskip
 
-%-----------PROGRAMMING SKILLS-----------
-\section{\apricotColor{Skills}}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming Languages}{: Java, Kotlin, JavaScript, TypeScript, Python, Clojure, C/C++, Haskell, Perl, Prolog} \\
-     \textbf{Other languages}{: Bash, YQL, SQL, Arend}\\
-     \textbf{Version Control}{: Git, Svn, Arc} \\
-     \textbf{Testing Frameworks}{: JUnit4/5, Mockito, kotlin.test, WireMock, Spring} \\
-     \textbf{Writing}{: \LaTeX, Office} \\
-     \textbf{Framework}{: Spring, JDBC, GraphQL, JNI, V8, Google APIs, Playwright} \\
-     \textbf{Languages}{: Russian, English (C1)} \\
-     \textbf{Algorithms and Data Structures}{: The most spread algorithms and structures, heaps, search trees, algorithms and structures on graphs, flows, hash data structures, string algorithms and others\dots} \\
-    }}
- \end{itemize}
+\section{Work Experience}
+
+% Each job is added with a \jobentry command. Below is an empty one to use as a template:
+
+%\jobentry
+%	{} % Duration
+%	{} % FT/PT (full time or part time)
+%	{} % Employer
+%	{} % Job title
+%	{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\jobentry
+	{Current, from Sep 2022} % Duration
+	{PT} % FT/PT (full time or part time)
+	{Huawei Research Center} % Employer
+	{UI Framework Engineer} % Job title
+	{Our team is working on cross-platform reactive UI Framework based on positional memoization concept. Written in TypeScript with parts of C++ and Java (for Android applications). I am developing components and applications for commercial purposes and also integrating features for Android devices. Stack of technologies: JNI, V8, Java, C++, TypeScript, Anrdoid and Skia library. } % Description
+
+%------------------------------------------------
+
+\jobentry
+	{Sep 2021 -- JUNE 2022} % Duration
+	{PT} % FT/PT (full time or part time)
+	{Yandex.Direct} % Employer
+	{Intern Software Engineer} % Job title
+	{I was developing project named ``Smart Strategies" - upgrade of current advertisement mechanism to combine relevant settings of existing campaigns. This project written in Java and Kotlin and it is Spring boot application with dependencies on GraphQL, jOOQ, Postgres and Protobuf. Testing frameworks: Mockito and Spring.} % Description
+
+ \jobentry
+	{JUNE 2021 -- AUG 2022} % Duration
+	{} % FT/PT (full time or part time)
+	{Computer Science Laboratory at ITMO University} % Employer
+	{Intern Researcher} % Job title
+	{We was writing article called ``Additive Drift with Tail Bounds: Comparing the Existing Approaches" for three months. During this project we proofed ``Drift Theorem for Lower Bounds" originally published in ``Hitting-time and occupation-time bounds implied by drift analysis with applications" authored by Bruce Hajek in 1982} % Description
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+
+
+% \begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+
+% 	%------------------------------------------------
+	
+% 	\qualificationentry
+% 		{2019 -- present} % Duration
+% 		{Bachelor} % Degree
+% 		{4.36 / 5 GPA, winner of awards for educational excellence in 2020, 2021 years} % Honors, achievements or distinctions (e.g. first class honors)
+% 		{Computer Science} % Department
+% 		{ITMO University} % Institution
+
+%     \qualificationentry
+% 		{2015 -- 2019} % Duration
+% 		{Pupil} % Degree
+% 		{} % Honors, achievements or distinctions (e.g. first class honors)
+%         {}
+% 		{Physics and mathematics lyceum №239} % Institution
+	
+% 	%------------------------------------------------
+
+% \end{supertabular}
+% \medskip % Extra vertical whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the second (right) column
+
+%----------------------------------------------------------------------------------------
+%	COLORED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
+	\colorbox{shade}{ % Create colored box and specify background color
+		\begin{supertabular}{@{\hspace{1pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & Leninsky Prospekt 88, St. Petersburg, Russia \\ % Address
+			\raisebox{-1pt}{\faPhone} & +7 (921) 869-79-25 \\ % Phone number
+			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:fvixnin@gmail.com}{fvixnin@gmail.com} \\ % Email address
+			% \raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/Brat-vseznamus}{Brat-Vseznamus} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedin} & \href{https://www.linkedin.com/in/\%D1\%84\%D1\%91\%D0\%B4\%D0\%BE\%D1\%80-\%D0\%B2\%D0\%B8\%D1\%85\%D0\%BD\%D0\%B8\%D0\%BD-394048259}{\text{Фёдор Вихнин}} \\ % LinkedIn profile
+           \raisebox{-1pt}{\faTelegram} & \href{https://t.me/Quicksmart}{@Quicksmart} \\
+			% See fontawesome.pdf in the Fonts folder for all icons you can use
+		\end{supertabular}
+	}
+	\vfill % Push content to the top of the box
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2017, 2018, 2019}{\textbf{Prize-winner}}{}
+	\tableentry{}{\textit{Regional Stage of the All-Russian}}{}
+    \tableentry{}{\textit{School Olympiad of Physics}}{spaceafter}
+ 
+	
+	%------------------------------------------------
+	
+	\tableentry{2018}{\textbf{Prize-winner}}{}
+	\tableentry{}{\textit{Regional Stage of the All-Russian}}{}
+    \tableentry{}{\textit{School Olympiad of Maths}}{spaceafter}
+	
+	%------------------------------------------------
+
+    \tableentry{2021}{\textbf{Winner of the award}}{}
+	\tableentry{}{\textit{Award for educational excellence}}{}
+     \tableentry{}{\textit{From Huawei}}{spaceafter}
+
+     \tableentry{2021}{\textbf{Winner of the award}}{}
+	\tableentry{}{\textit{Award for educational excellence}}{}
+     \tableentry{}{\textit{From Serokell}}{spaceafter}
+
+     \tableentry{2022}{\textbf{Winner of the award}}{}
+	\tableentry{}{\textit{Award for educational excellence}}{}
+     \tableentry{}{\textit{From Selectel}}{spaceafter}
+
+ 
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	\tableentry{Expert}{Java, JavaScript, TypeScript, Kotlin,}{spaceafter}
+    \tableentry{}{Haskell, Python}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Intermediate}{C/C++, HTML, CSS, Clojure, }{spaceafter}
+	\tableentry{}{Prolog, SQL, Bash, Arend, \LaTeX}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{Beginner}{Scala, Rust}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Fluent}{Russian}{}
+	
+	%------------------------------------------------
+	
+	\tableentry{Advanced (C1)}{English}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+\medskip
+
+\section{Projects}
+
+\jobentry
+	{December 2021} % Duration
+	{} % FT/PT (full time or part time)
+	{} % Employer
+	{Lazy Language ``HI"} % Job title
+	{Custom lazy language written in Haskell with basic math, object and binary data operations.} % Description
+
+%------------------------------------------------
+
+\jobentry
+	{July 2022 -- Present} % Duration
+	{} % FT/PT (full time or part time)
+	{} % Employer
+	{Event Designer} % Job title
+	{Project developed with my group mates for creating and organizing events for people, which requires little input from users.} % Description
+
+ \jobentry
+	{Sep 2022 -- Present} % Duration
+	{} % FT/PT (full time or part time)
+	{} % Employer
+	{Telegram bot sync python library} % Job title
+	{Library for developing bots with simple databases as finite-state machines and to maintain them on Yandex.Cloud services.} % Description
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+% \section{Publications}
+
+% %------------------------------------------------
+
+% \textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.
+
+% \medskip % Vertical whitespace
+
+% Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.
+
+% \medskip % Vertical whitespace
+
+%------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will output the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+
+% \subsection{Publications by DOI}
+
+% \begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	\doipublication{1986}{10.1139/v86-297}{}{}
+% 	\doipublication{}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+	
+% 	%------------------------------------------------
+	
+% 	& \textit{First author publications in} \textbf{bold}\\
+	
+% 	%------------------------------------------------
+	
+% \end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol} % End two-column mode
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
